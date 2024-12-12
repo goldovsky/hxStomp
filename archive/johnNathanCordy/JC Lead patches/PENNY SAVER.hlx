@@ -1,0 +1,361 @@
+{
+ "data" : {
+  "device" : 2162694,
+  "device_version" : 51707904,
+  "meta" : {
+   "application" : "HX Edit",
+   "appversion" : 55083617,
+   "build_sha" : "v3.10-158-g474c1a0",
+   "modifieddate" : 1665212859,
+   "name" : "PENNY SAVER"
+  },
+  "tone" : {
+   "controller" : {
+    "dsp0" : {
+     "join" : {
+      "B Level" : {
+       "@controller" : 2,
+       "@max" : 10.9688,
+       "@min" : -60.0,
+       "@snapshot_disable" : false
+      }
+     }
+    }
+   },
+   "dsp0" : {
+    "block0" : {
+     "@enabled" : true,
+     "@model" : "HD2_DelayReverseDelay",
+     "@no_snapshot_bypass" : false,
+     "@path" : 0,
+     "@position" : 2,
+     "@stereo" : false,
+     "@trails" : false,
+     "@type" : 7,
+     "Depth" : 0.50,
+     "Feedback" : 0.50,
+     "HighCut" : 20100.0,
+     "Level" : 0.0,
+     "LowCut" : 19.90,
+     "Mix" : 0.50,
+     "ModulationMode" : 0,
+     "Speed" : 0.020,
+     "Spread" : 1.0,
+     "SyncSelect1" : 6,
+     "TempoSync1" : false,
+     "Time" : 1.0
+    },
+    "block1" : {
+     "@bypassvolume" : 1.0,
+     "@enabled" : true,
+     "@model" : "HD2_PreampVintagePre",
+     "@no_snapshot_bypass" : false,
+     "@path" : 1,
+     "@position" : 1,
+     "@type" : 1,
+     "Hi Pass" : 10.0,
+     "Input" : 0.840,
+     "Low Pass" : 20000.0,
+     "MicLine" : true,
+     "Output" : 0.30,
+     "Polarity" : false
+    },
+    "block2" : {
+     "@enabled" : true,
+     "@model" : "HD2_DelayTransistorTape",
+     "@no_snapshot_bypass" : false,
+     "@path" : 1,
+     "@position" : 3,
+     "@stereo" : true,
+     "@trails" : false,
+     "@type" : 7,
+     "Feedback" : 0.660,
+     "Headroom" : 12.0,
+     "Level" : 0.0,
+     "Mix" : 1.0,
+     "Scale" : 0.80,
+     "Spread" : 0.290,
+     "SyncSelect1" : 6,
+     "TempoSync1" : false,
+     "Time" : 0.50,
+     "WowFlutter" : 0.440
+    },
+    "block3" : {
+     "@enabled" : true,
+     "@model" : "HD2_RetroReel",
+     "@no_snapshot_bypass" : false,
+     "@path" : 1,
+     "@position" : 4,
+     "@stereo" : true,
+     "@type" : 0,
+     "HighCut" : 20100.0,
+     "Level" : 0.0,
+     "LowCut" : 19.90,
+     "Saturation" : 0.0,
+     "TapeSpeed" : 1,
+     "Texture" : 0.6250,
+     "WowFluttr" : 0.620
+    },
+    "block4" : {
+     "@enabled" : true,
+     "@model" : "VIC_DelayGlitch",
+     "@no_snapshot_bypass" : false,
+     "@path" : 1,
+     "@position" : 5,
+     "@stereo" : true,
+     "@trails" : false,
+     "@type" : 7,
+     "Delay Div" : 2,
+     "Feedback" : 0.580,
+     "High Cut" : 20100.0,
+     "Interval 1" : 12,
+     "Interval 2" : 12,
+     "Level" : 0.0,
+     "Lock" : false,
+     "Low Cut" : 19.90,
+     "Mix" : 0.150,
+     "Pitch" : 1.0,
+     "Reverse" : 1.0,
+     "Seq Drift" : 0.0,
+     "Shuffle" : 0.50,
+     "SliceFdbk" : 0.140,
+     "Smoothing" : 0.10,
+     "SyncSelect1" : 6,
+     "TempoSync1" : false,
+     "Time" : 1.0
+    },
+    "block5" : {
+     "@enabled" : true,
+     "@model" : "VIC_DynPlate",
+     "@no_snapshot_bypass" : false,
+     "@path" : 1,
+     "@position" : 6,
+     "@stereo" : true,
+     "@trails" : false,
+     "@type" : 7,
+     "BassBoost" : 0.0,
+     "BassFreq" : 100.0,
+     "Damping" : 11100.0,
+     "Decay" : 13.90,
+     "HighCut" : 10000.0,
+     "Level" : 0.0,
+     "LowCut" : 100.0,
+     "MatrFreq" : 0.330,
+     "Mix" : 0.180,
+     "PreDelay" : 0.00999999,
+     "VarDelayAmpl" : 0.60
+    },
+    "block6" : {
+     "@enabled" : true,
+     "@model" : "HD2_FlangerHarmonicFlanger",
+     "@no_snapshot_bypass" : false,
+     "@path" : 1,
+     "@position" : 7,
+     "@stereo" : true,
+     "@type" : 0,
+     "Enhance" : 0.280,
+     "Harmonic" : true,
+     "Headroom" : 12.0,
+     "Level" : 0.0,
+     "Manual" : 0.840,
+     "Mix" : 0.350,
+     "Rate" : 0.350,
+     "Spread" : 0.1250,
+     "SyncSelect1" : 6,
+     "TempoSync1" : false,
+     "Width" : 0.80
+    },
+    "inputA" : {
+     "@input" : 1,
+     "@model" : "HelixStomp_AppDSPFlowInput",
+     "decay" : 0.50,
+     "noiseGate" : false,
+     "threshold" : -48.0
+    },
+    "inputB" : {
+     "@input" : 0,
+     "@model" : "HelixStomp_AppDSPFlowInput",
+     "decay" : 0.50,
+     "noiseGate" : false,
+     "threshold" : -48.0
+    },
+    "join" : {
+     "@enabled" : true,
+     "@model" : "HD2_AppDSPFlowJoin",
+     "@no_snapshot_bypass" : false,
+     "@position" : 8,
+     "A Level" : 0.0,
+     "A Pan" : 0.50,
+     "B Level" : -60.0,
+     "B Pan" : 0.50,
+     "B Polarity" : false,
+     "Level" : 3.0
+    },
+    "outputA" : {
+     "@model" : "HelixStomp_AppDSPFlowOutputMain",
+     "@output" : 1,
+     "gain" : 0.0,
+     "pan" : 0.50
+    },
+    "outputB" : {
+     "@model" : "HelixStomp_AppDSPFlowOutputSend",
+     "@output" : 0,
+     "Type" : true,
+     "gain" : 0.0,
+     "pan" : 0.50
+    },
+    "split" : {
+     "@enabled" : true,
+     "@model" : "HD2_AppDSPFlowSplitY",
+     "@no_snapshot_bypass" : false,
+     "@position" : 1,
+     "BalanceA" : 0.50,
+     "BalanceB" : 0.50,
+     "bypass" : false
+    }
+   },
+   "dsp1" : {},
+   "footswitch" : {
+    "dsp0" : {
+     "block0" : {
+      "@fs_enabled" : true,
+      "@fs_index" : 1,
+      "@fs_label" : "Reverse Delay",
+      "@fs_ledcolor" : 458496,
+      "@fs_momentary" : false,
+      "@fs_primary" : true
+     }
+    }
+   },
+   "global" : {
+    "@DtSelect" : 2,
+    "@PowercabMode" : 0,
+    "@PowercabSelect" : 2,
+    "@PowercabVoicing" : 0,
+    "@current_snapshot" : 2,
+    "@cursor_dsp" : 0,
+    "@cursor_group" : "block0",
+    "@cursor_path" : 0,
+    "@cursor_position" : 2,
+    "@guitarinputZ" : 0,
+    "@guitarpad" : 0,
+    "@model" : "@global_params",
+    "@pedalstate" : 2,
+    "@tempo" : 188.088,
+    "@topology0" : "SABJ",
+    "@topology1" : 0
+   },
+   "snapshot0" : {
+    "@custom_name" : false,
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 1",
+    "@pedalstate" : 0,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "block6" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "join" : {
+       "B Level" : {
+        "@fs_enabled" : false,
+        "@value" : 10.2351
+       }
+      }
+     }
+    }
+   },
+   "snapshot1" : {
+    "@custom_name" : false,
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 2",
+    "@pedalstate" : 0,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "block6" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "join" : {
+       "B Level" : {
+        "@fs_enabled" : false,
+        "@value" : 10.2351
+       }
+      }
+     }
+    }
+   },
+   "snapshot2" : {
+    "@custom_name" : false,
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 3",
+    "@pedalstate" : 0,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "block6" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "join" : {
+       "B Level" : {
+        "@fs_enabled" : false,
+        "@value" : -60.0
+       }
+      }
+     }
+    }
+   },
+   "variax" : {
+    "@variax_customtuning" : true,
+    "@variax_lockctrls" : 0,
+    "@variax_magmode" : false,
+    "@variax_model" : 0,
+    "@variax_str1tuning" : 0,
+    "@variax_str2tuning" : 0,
+    "@variax_str3tuning" : 0,
+    "@variax_str4tuning" : 0,
+    "@variax_str5tuning" : 0,
+    "@variax_str6tuning" : 0,
+    "@variax_toneknob" : -0.10,
+    "@variax_volumeknob" : -0.10
+   }
+  }
+ },
+ "meta" : {
+  "original" : 0,
+  "pbn" : 0,
+  "premium" : 0
+ },
+ "schema" : "L6Preset",
+ "version" : 6
+}

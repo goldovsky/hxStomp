@@ -1,0 +1,514 @@
+{
+ "data" : {
+  "device" : 2162944,
+  "device_version" : 0,
+  "meta" : {
+   "build_sha" : "",
+   "name" : "JCArch"
+  },
+  "tone" : {
+   "controller" : {
+    "dsp0" : {
+     "block3" : {
+      "HighCut" : {
+       "@controller" : 19,
+       "@max" : 20100.0,
+       "@min" : 500.0
+      }
+     },
+     "block4" : {
+      "HighCut" : {
+       "@controller" : 19,
+       "@max" : 20100.0,
+       "@min" : 500.0
+      }
+     }
+    }
+   },
+   "dsp0" : {
+    "block0" : {
+     "@enabled" : true,
+     "@model" : "HD2_CompressorRedSqueeze",
+     "@path" : 0,
+     "@position" : 0,
+     "@stereo" : false,
+     "@type" : 0,
+     "Level" : 5.40,
+     "Mix" : 1.0,
+     "Sensitivity" : 0.440
+    },
+    "block1" : {
+     "@enabled" : true,
+     "@model" : "HD2_DM4Screamer",
+     "@path" : 0,
+     "@position" : 1,
+     "@type" : 0,
+     "Bass" : 0.610,
+     "Drive" : 0.480,
+     "Output" : 0.80,
+     "Tone" : 0.520,
+     "Treble" : 0.530
+    },
+    "block2" : {
+     "@bypassvolume" : 1.0,
+     "@enabled" : true,
+     "@model" : "HD2_AmpArchetypeLead",
+     "@path" : 0,
+     "@position" : 2,
+     "@type" : 1,
+     "Bass" : 0.50,
+     "Bias" : 0.50,
+     "BiasX" : 0.50,
+     "ChVol" : 0.750,
+     "Depth" : 0.250,
+     "Drive" : 0.520,
+     "Hum" : 0.50,
+     "Master" : 0.450,
+     "Mid" : 0.950,
+     "Presence" : 0.40,
+     "Ripple" : 0.680,
+     "Sag" : 0.890,
+     "Treble" : 0.50
+    },
+    "block3" : {
+     "@enabled" : true,
+     "@model" : "HD2_ImpulseResponse2048",
+     "@path" : 1,
+     "@position" : 3,
+     "@type" : 5,
+     "HighCut" : 4900.0,
+     "Index" : 52,
+     "Level" : -22.0,
+     "LowCut" : 19.90,
+     "Mix" : 1.0
+    },
+    "block4" : {
+     "@enabled" : true,
+     "@mic" : 1,
+     "@model" : "HD2_Cab1x12Lead80",
+     "@path" : 0,
+     "@position" : 3,
+     "@type" : 2,
+     "Distance" : 4.0,
+     "EarlyReflections" : 0.0,
+     "HighCut" : 5000.0,
+     "Level" : 1.20,
+     "LowCut" : 19.90
+    },
+    "block5" : {
+     "@enabled" : true,
+     "@model" : "HD2_DelayTransistorTape",
+     "@path" : 0,
+     "@position" : 6,
+     "@stereo" : true,
+     "@trails" : false,
+     "@type" : 7,
+     "Feedback" : 0.540,
+     "Headroom" : 0.0,
+     "Level" : 0.0,
+     "Mix" : 0.40,
+     "Scale" : 1.0,
+     "Spread" : 0.290,
+     "SyncSelect1" : 6,
+     "TempoSync1" : false,
+     "Time" : 0.5070,
+     "WowFlutter" : 0.360
+    },
+    "inputA" : {
+     "@input" : 1,
+     "@model" : "HD2_AppDSPFlow1Input",
+     "decay" : 0.50,
+     "noiseGate" : false,
+     "threshold" : -48.0
+    },
+    "inputB" : {
+     "@input" : 0,
+     "@model" : "HD2_AppDSPFlow2Input",
+     "decay" : 0.50,
+     "noiseGate" : false,
+     "threshold" : -48.0
+    },
+    "join" : {
+     "@enabled" : true,
+     "@model" : "HD2_AppDSPFlowJoin",
+     "@position" : 6,
+     "A Level" : 0.0,
+     "A Pan" : 0.50,
+     "B Level" : 0.0,
+     "B Pan" : 0.50,
+     "B Polarity" : false,
+     "Level" : 0.0
+    },
+    "outputA" : {
+     "@model" : "HD2_AppDSPFlowOutput",
+     "@output" : 1,
+     "gain" : 6.0,
+     "pan" : 0.50
+    },
+    "outputB" : {
+     "@model" : "HD2_AppDSPFlowOutput",
+     "@output" : 0,
+     "gain" : 0.0,
+     "pan" : 0.50
+    },
+    "split" : {
+     "@enabled" : true,
+     "@model" : "HD2_AppDSPFlowSplitY",
+     "@position" : 3,
+     "BalanceA" : 0.50,
+     "BalanceB" : 0.50,
+     "bypass" : false
+    }
+   },
+   "dsp1" : {
+    "inputA" : {
+     "@input" : 0,
+     "@model" : "HD2_AppDSPFlow1Input",
+     "decay" : 0.50,
+     "noiseGate" : false,
+     "threshold" : -48.0
+    },
+    "inputB" : {
+     "@input" : 0,
+     "@model" : "HD2_AppDSPFlow2Input",
+     "decay" : 0.50,
+     "noiseGate" : false,
+     "threshold" : -48.0
+    },
+    "join" : {
+     "@enabled" : true,
+     "@model" : "HD2_AppDSPFlowJoin",
+     "@position" : 8,
+     "A Level" : 0.0,
+     "A Pan" : 0.50,
+     "B Level" : 0.0,
+     "B Pan" : 0.50,
+     "B Polarity" : false,
+     "Level" : 0.0
+    },
+    "outputA" : {
+     "@model" : "HD2_AppDSPFlowOutput",
+     "@output" : 1,
+     "gain" : 0.0,
+     "pan" : 0.50
+    },
+    "outputB" : {
+     "@model" : "HD2_AppDSPFlowOutput",
+     "@output" : 0,
+     "gain" : 0.0,
+     "pan" : 0.50
+    },
+    "split" : {
+     "@enabled" : true,
+     "@model" : "HD2_AppDSPFlowSplitY",
+     "@position" : 0,
+     "BalanceA" : 0.50,
+     "BalanceB" : 0.50,
+     "bypass" : false
+    }
+   },
+   "global" : {
+    "@current_snapshot" : 0,
+    "@cursor_dsp" : 0,
+    "@cursor_group" : "block2",
+    "@guitarinputZ" : 0,
+    "@model" : "@global_params",
+    "@pedalstate" : 2,
+    "@tempo" : 120.0,
+    "@topology0" : "SABJ",
+    "@topology1" : "A",
+    "@variax_customtuning" : false,
+    "@variax_lockctrls" : 0,
+    "@variax_magmode" : true,
+    "@variax_model" : 0,
+    "@variax_str1tuning" : 0,
+    "@variax_str2tuning" : 0,
+    "@variax_str3tuning" : 0,
+    "@variax_str4tuning" : 0,
+    "@variax_str5tuning" : 0,
+    "@variax_str6tuning" : 0,
+    "@variax_toneknob" : -0.10,
+    "@variax_volumeknob" : -0.10
+   },
+   "snapshot0" : {
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 1",
+    "@pedalstate" : 2,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "block3" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 5900.0
+       }
+      },
+      "block4" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 6500.0
+       }
+      }
+     }
+    }
+   },
+   "snapshot1" : {
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 2",
+    "@pedalstate" : 2,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "block3" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 4900.0
+       }
+      },
+      "block4" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 5000.0
+       }
+      }
+     }
+    }
+   },
+   "snapshot2" : {
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 3",
+    "@pedalstate" : 2,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "block3" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 15000.0
+       }
+      },
+      "block4" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 15000.0
+       }
+      }
+     }
+    }
+   },
+   "snapshot3" : {
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 4",
+    "@pedalstate" : 2,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "block3" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 4900.0
+       }
+      },
+      "block4" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 5000.0
+       }
+      }
+     }
+    }
+   },
+   "snapshot4" : {
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 5",
+    "@pedalstate" : 2,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "block3" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 4900.0
+       }
+      },
+      "block4" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 5000.0
+       }
+      }
+     }
+    }
+   },
+   "snapshot5" : {
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 6",
+    "@pedalstate" : 2,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "block3" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 4900.0
+       }
+      },
+      "block4" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 5000.0
+       }
+      }
+     }
+    }
+   },
+   "snapshot6" : {
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 7",
+    "@pedalstate" : 2,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "block3" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 4900.0
+       }
+      },
+      "block4" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 5000.0
+       }
+      }
+     }
+    }
+   },
+   "snapshot7" : {
+    "@ledcolor" : 0,
+    "@name" : "SNAPSHOT 8",
+    "@pedalstate" : 2,
+    "@tempo" : 120.0,
+    "@valid" : true,
+    "blocks" : {
+     "dsp0" : {
+      "block0" : true,
+      "block1" : true,
+      "block2" : true,
+      "block3" : true,
+      "block4" : true,
+      "block5" : true,
+      "split" : true
+     }
+    },
+    "controllers" : {
+     "dsp0" : {
+      "block3" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 4900.0
+       }
+      },
+      "block4" : {
+       "HighCut" : {
+        "@fs_enabled" : false,
+        "@value" : 5000.0
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "meta" : {
+  "original" : 0,
+  "pbn" : 0,
+  "premium" : 0
+ },
+ "schema" : "L6Preset",
+ "version" : 6
+}
